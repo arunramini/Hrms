@@ -43,13 +43,19 @@ public class LoginServiceImpl implements LoginService {
 		tblUsers.put("admin", loginDao.getAdminUsers().size());
 		tblUsers.put("employee", loginDao.getHrUsers().size());
 		tblUsers.put("hr", loginDao.getHrUsers().size());
-
 		return tblUsers;
 	}
 
+	@Transactional
 	public List<HrmsLogin> getUserList() {
 		// TODO Auto-generated method stub
 		return loginDao.getLoginUsers();
+	}
+
+	@Transactional
+	public List<HrmsLogin> getEmployee(String username) {
+		// TODO Auto-generated method stub
+		return loginDao.getEmployee(username);
 	}
 
 }

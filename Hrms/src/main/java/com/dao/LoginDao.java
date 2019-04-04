@@ -22,4 +22,5 @@ public interface LoginDao {
 
 	public List<HrmsLogin> getEmployeeUsers();
 
+	public List<HrmsLogin> getEmployee(String username);
 }

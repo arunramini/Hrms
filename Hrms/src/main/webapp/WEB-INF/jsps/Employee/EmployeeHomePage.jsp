@@ -8,6 +8,8 @@
 </head>
 <body>
 Login Success
-<marquee> WelCome to ${login.lastName}</marquee>
+<marquee> WelCome to ${loginForm.username}</marquee>
+
+<marquee> WelCome to ${loginForm.id} </marquee>
 <!-- login is name for session attribute --></body>
 </html>

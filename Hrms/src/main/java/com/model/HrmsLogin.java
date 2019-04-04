@@ -22,6 +22,11 @@ public class HrmsLogin implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private String username;
+	@Override
+	public String toString() {
+		return "HrmsLogin [username=" + username + ", password=" + password + ", role=" + role + "]";
+	}
+
 	private HrmsEmployeeDetails hrmsEmployeeDetails;
 	private String password;
 	private String role;

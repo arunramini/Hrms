@@ -11,5 +11,6 @@ public interface LoginService {
 	public String checkRole(String username, String password);
 	public Map<String,Integer> mapUsers();
 	public List<HrmsLogin> getUserList();
+	public List<HrmsLogin> getEmployee(String username);
 
 }
